@@ -1,0 +1,22 @@
+1. Learn what HTML is, its history, and why it is used.
+HTML is known as Hyper Text Markup Language. 
+HTML is used to create the structure of a web page. 
+Browser can only understand HTML
+HTML uses tags to structure the content of a webpage
+
+  History
+HTML was created in 1991 by Tim Berners-Lee.
+It was developed to share documents over the internet.
+
+Uses
+Used to build the structure of a website
+By using HTML we can add images and videos
+Provides Navigation between webpages by using hyperlinks (<a> tag) 
+HTML plays a major role in building the frontend structure for web applications 
+
+2. Understand <!DOCTYPE>, <html>, <head>, <body>. Create a simple HTML page.
+
+<!DOCTYPE> - It tells the browser which version of HTML is used.
+<HTML> - This is the root element of an HTML page. ALL HTML code must br inside this tag.
+<head> - Head tag contains title,meta information and links to CSS.
+<body> - This contains the actual content shown in the browser. Example: text, headings, images, links etc.
