@@ -1,0 +1,28 @@
+1.Understand the difference between block-level and inline elements. Practice examples with <div>, <p> (block) and <span>, <a> (inline).
+
+BLOCK LEVEL ELEMENT
+Block elements take the full width of the page 
+Block elements always start on a new line.
+A block element can be inside another block element
+Ex: <p>,<h1> to <h6>,<div>
+INLINE ELEMENT
+Occupies only the specified width
+Inline elements do not start on a new line.
+Inline element cannot come inside another inline element or block element.
+Ex: <span>,<a>,<b>,<i>
+
+2. Learn and practice basic tags: headings <h1>–<h6>, paragraph <p>, division <div>, and inline <span>. Create a sample page using them.
+
+Headings <h1> – <h6>
+Used for titles and subtitles.
+<h1> is the largest heading and <h6> is the smallest.
+
+Paragraph <p>
+Used to write text or content in paragraph form.
+
+Division <div>
+<div> is a container element used to group other HTML elements together.
+
+Inline Element
+Occupies only the specified width
+Inline elements do not start on a new line.
