@@ -1,0 +1,124 @@
+1. Learn difference between  (bold styling) and <strong> (semantic importance). Practice both in sentences.
+ is used only for visual styling.
+It makes the text bold but does not indicate importance.
+Example: <p>This is a bold word</p>
+<strong> is used to show important text.
+It also appears bold, but it tells browsers and search engines that the text is important.
+
+2. Understand  (italic styling) vs <em> (emphasis). Use them in a paragraph.
+The <i> and <em> tags are used to display italic text, but their meaning is different.
+
+<i> Tag
+The <i> tag is used for italic styling only. It does not give any special meaning to the text.
+
+<em> Tag
+The <em> tag is used to emphasize important text. It also appears italic but has semantic meaning, which helps browsers and search engines understand the importance of the text.
+
+3. Practice underlining text with <u>, highlighting with <mark>, and making side notes with <small>.
+HTML provides formatting tags such as <u>, <mark>, and <small>.
+<u> Tag
+The <u> tag is used to underline text.
+Example:
+     <p><u>HTML is easy to learn.</u></p>
+
+<mark> Tag
+The <mark> tag is used to highlight text.
+Example:
+      <p>Practice <mark>HTML daily</mark> to improve your skills.</p>
+
+<small> Tag
+The <small> tag is used to show side notes or smaller text.
+Example:
+<p>This is a website.<small> Terms and conditions apply.</small></p>
+
+4. Create hyperlinks using <a>. Add external links, internal links, and “back to top” links.
+The <a> (anchor) tag is used to create hyperlinks that connect webpages.
+
+External Link
+An external link directs users to another website.
+Example:
+<a href="https://www.google.com">Visit Google</a>
+
+Internal Link
+An internal link connects pages within the same website.
+Example:
+<a href="about.html">Go to About Page</a>
+
+Back-to-Top Link
+A back-to-top link allows users to return to the top of the webpage.
+Example:
+<h1 id="top">My Website</h1>
+<a href="#top">Back to Top</a>
+
+5. Learn how <button> works inside forms and as clickable UI elements. Practice adding button text and attributes.
+The <button> tag creates a clickable button.
+It can be used inside forms to submit data or as a clickable user interface element.
+Example: <button type="submit">Submit</button>
+Example inside a form:
+         <form>
+         <button type="submit">Send</button>
+         </form>
+
+6. Explore different input types (text, password, email, checkbox, radio). Build a mini form.
+The <input> tag is used to collect user information in forms.
+Common input types include: text,password,email,checkbox,radio.
+
+<form>
+
+<label>Name:</label>
+<input type="text"><br><br>
+
+<label>Password:</label>
+<input type="password"><br><br>
+
+<label>Email:</label>
+<input type="email"><br><br>
+
+<label>Gender:</label>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+
+</form>
+
+7. Learn how to use <textarea> for multi-line input. Practice making a feedback form.
+The <textarea> tag is used to create a multi-line input field for longer messages such as feedback.
+This allows the user to type multiple lines of text.
+EXAMPLE:
+<label>Feedback:</label><br>
+<textarea rows="4" cols="30"></textarea>
+
+8. Combine formatting and interactive tags to create a styled feedback form (with bold labels, highlighted text, inputs, and buttons).
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Feedback Form</title>
+</head>
+<body>
+<h2><u>Feedback Form</u></h2>
+<p><mark>Your feedback is important to us.</mark></p>
+<form>
+<strong>Name:</strong>
+<input type="text"><br><br>
+<strong>Email:</strong>
+<input type="email"><br><br>
+<strong>Gender:</strong>
+<input type="radio" name="gender"> Male
+<input type="radio" name="gender"> Female
+<br><br>
+<strong>Skills:</strong>
+<input type="checkbox"> HTML
+<input type="checkbox"> CSS
+<input type="checkbox"> JavaScript
+<br><br>
+<strong>Feedback:</strong><br>
+<textarea rows="4" cols="30"></textarea>
+<br><br>
+<button type="submit">Submit</button>
+</form>
+<small>Thank you for your valuable feedback.</small>
+</body>
+</html>
+
+
+
