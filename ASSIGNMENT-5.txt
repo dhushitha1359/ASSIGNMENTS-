@@ -1,0 +1,175 @@
+1.Learn what attributes are in HTML. Explore how they provide extra information about elements (e.g., href, src, alt).
+
+Attributes give extra information about HTML elements and tags.
+Written in the opening tag
+Example: href, src, input type, id name, alt
+
+href- 1. Used in <a> tag
+      2. Specifies the URL of the link
+
+src - 1. Used in <img> tag
+      2. Specifies the image path
+
+alt - 1. Provides alternative text for images
+      2. Helps if image doesn’t load
+      3. Improves accessibility
+
+2. Learn how to use class for styling multiple elements with CSS. Practice applying same class to multiple tags.
+
+class is used to apply same style to multiple elements
+Can be used in many tags
+Accessed in CSS using . (dot)
+
+3. Understand the uniqueness of id. Use it for styling and JavaScript targeting. Practice assigning unique IDs
+
+Used to identify a unique element
+Cannot be repeated
+Used in CSS with (#)
+Also used in JavaScript
+
+4. Explore the title attribute (tooltip on hover) and practice with attributes like lang, style, and hidden.
+title → shows a tooltip on hover:
+
+<p title="This is a tooltip">Hover over me</p>
+<abbr title="HyperText Markup Language">HTML</abbr>
+
+2. lang → declares the language:
+<html lang="en">
+<p lang="ta">வணக்கம்</p>
+<p lang="fr">Bonjour</p>
+
+3. style → inline CSS directly on the element:
+<p style="color: red; font-size: 20px;">Red text</p>
+
+4. hidden → hides the element (boolean, no value needed):
+<p hidden>You can't see this</p>
+document.querySelector("p").removeAttribute("hidden");
+
+5. Create hyperlinks with href. Practice absolute links (to external websites) and relative links (to local files).
+
+Absolute Link (external)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks</title>
+</head>
+<body>
+    <a href="https://google.com">Google</a>
+</body>
+</html>
+
+2. Relative Link (internal file)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hyperlinks</title>
+</head>
+<body>
+       <a href="about.html">About Page</a>
+</body>
+</html>
+
+6. Add attributes like target="_blank", download, mailto:. Create navigation between pages.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Navigation Example</title>
+</head>
+<body>
+
+  <!-- Open in new tab -->
+  <a href="https://google.com" target="_blank">Open Google</a>
+  <br><br>
+
+  <!-- Download file -->
+  <a href="file.pdf" download>Download PDF</a>
+  <br><br>
+
+  <!-- Send Email -->
+  <a href="mailto:test@gmail.com">Send Email</a>
+  <br><br>
+
+  <!-- Navigation between pages -->
+  <a href="page2.html">Go to Page 2</a>
+
+</body>
+</html>
+
+7. Learn src and alt attributes. Insert images into a webpage.
+
+src Attribute
+Used in <img> tag
+Specifies the path of the image
+Can be local file or online URL
+
+alt Attribute
+Provides alternative text for the image
+Displays when image is not loaded
+Improves accessibility and SEO
+
+8. Practice adding image dimensions (width, height), responsive images, and clickable images (image inside <a>).
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Image Practice</title>
+</head>
+<body>
+
+  <h2>Image with Size</h2>
+  <img src="photo.jpg" alt="Sample Image" width="200" height="150">
+
+  <h2>Responsive Image</h2>
+  <img src="photo.jpg" alt="Responsive Image" width="100%">
+
+  <h2>Clickable Image</h2>
+  <a href="https://google.com">
+    <img src="photo.jpg" alt="Click to open Google" width="200">
+  </a>
+
+</body>
+</html>
+
+9. Create a webpage with navigation links, multiple sections using IDs, and images with proper alt text and titles.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Webpage</title>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <h1>My Website</h1>
+  <a href="#home">Home</a> |
+  <a href="#about">About</a> |
+  <a href="#contact">Contact</a>
+
+  <hr>
+
+  <!-- Home Section -->
+  <h2 id="home">Home</h2>
+  <p>Welcome to my website</p>
+  <img src="home.jpg" alt="Home Image" title="This is home section" width="200">
+
+  <hr>
+
+  <!-- About Section -->
+  <h2 id="about">About</h2>
+  <p>This is about section</p>
+  <img src="about.jpg" alt="About Image" title="About us" width="200">
+
+  <hr>
+
+  <!-- Contact Section -->
+  <h2 id="contact">Contact</h2>
+  <p>Contact us here</p>
+  <img src="contact.jpg" alt="Contact Image" title="Contact details" width="200">
+
+</body>
+</html>
