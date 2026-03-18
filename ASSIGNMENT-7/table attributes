@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Table Attributes Practice</title>
+
+  <style>
+    table {
+      border: 2px solid black;
+      border-collapse: collapse; /* removes double borders */
+      width: 60%;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 10px;          /* cell padding */
+      text-align: center;
+    }
+
+    table {
+      border-spacing: 10px;   /* cell spacing */
+    }
+  </style>
+
+</head>
+<body>
+
+<h3>Table with Colspan and Rowspan</h3>
+
+<table>
+
+  <tr>
+    <th>Name</th>
+    <th colspan="2">Subjects</th>
+  </tr>
+
+ 
+  <tr>
+    <td rowspan="2">Dhushitha</td> 
+    <td>Maths</td>
+    <td>Science</td>
+  </tr>
+
+  
+  <tr>
+    <td>English</td>
+    <td>Computer</td>
+  </tr>
+
+  
+  <tr>
+    <td>Arun</td>
+    <td colspan="2">All Subjects</td>
+  </tr>
+
+</table>
+
+</body>
+</html>
