@@ -1,0 +1,13 @@
+1. Learn the purpose of <form> in HTML. Create a basic form structure with action and method.
+<form> is used to collect user input.
+It sends data to a server for processing.
+Common uses:
+Login pages
+Signup/registration forms
+Contact forms
+
+<form action="login.php" method="POST">
+</form>
+2. Practice using <input type="text">, <input type="password">, and <input type="email">. Create a login form.
+
+
