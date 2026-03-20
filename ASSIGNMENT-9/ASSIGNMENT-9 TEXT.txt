@@ -1,0 +1,10 @@
+Given a basic HTML structure, write CSS to:
+  1. Create a div with a class .box.
+  2. Inside the .box, place some text content.
+  3. Style the .box to clearly show:
+  4. margin: space outside the box.
+  5. border: a visible outline.
+  6. padding: space inside the border, around the content.
+  7. content: the actual text    
+
+                                
