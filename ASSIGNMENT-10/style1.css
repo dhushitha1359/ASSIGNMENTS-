@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+header, footer {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+
+.container {
+    display: flex;
+    height: 300px;
+}
+
+.box {
+    flex: 10;
+    margin: 10px;
+    background-color: lightblue;
+    text-align: center;
+    line-height: 250px;
+    font-weight: bold;
+}
