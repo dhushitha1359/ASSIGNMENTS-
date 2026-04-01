@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1 style="background-color: bisque;" id="crew"> Treasure hunt </h1>
+        <div style="background-color:rgb(133, 98, 45); padding: 5px;>
+            <ul id="boat"></ul>
+            <h2>Crew Members</h2>
+            <li>1. Damon</li>
+            <li>2. Stefan</li>
+            <li>3. Klaus</li>
+            <li>4. Elijah</li><br><br>
+    
+        <button onclick="route('Damon')">Asking route to Damon</button><br><br>
+        <button onclick="route('Stefan')">Asking route to Stefan</button><br><br>
+        <button onclick="route('Klaus')">Asking route to Klaus</button>
+     </div>  
+     <script>
+        function route(name){
+            if (name == 'Damon'){
+                console.log(name + ' says to turn the boat towards west direction');
+                
+            }
+            else if(name == 'Klaus'){
+                console.log(name + ' says to turn the boat toward the south direction');
+            }
+            else {
+                console.log(name + ' says to turn the boat toward the east direction');
+            }
+        }
+
+     </script>     
+   
+</body>
+</html>
+
+
+
+
+
