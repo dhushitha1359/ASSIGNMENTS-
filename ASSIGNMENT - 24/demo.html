@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day 24 - DOM Events</title>
+</head>
+<body>
+
+    <!-- Input box -->
+    <input type="text" id="nameInput" placeholder="Type your name">
+
+    <!-- Paragraph to show input -->
+    <p id="output"></p>
+
+    <!-- Button -->
+    <button id="myBtn">Click Me</button>
+
+    <script>
+        // 1. Add a button click event
+        function handleClick() {
+            alert("Button was clicked!");
+        }
+
+        document.getElementById("myBtn").onclick = handleClick;
+
+        // 2. Show input value when typing
+        let input = document.getElementById("nameInput");
+        let output = document.getElementById("output");
+
+        input.addEventListener("input", function() {
+            output.textContent = "You are typing: " + input.value;
+        });
+
+        // 3. Add event listener to a button
+        document.getElementById("myBtn").addEventListener("click", function() {
+            console.log("Button clicked using addEventListener");
+        });
+
+    </script>
+
+</body>
+</html>
