@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Day 24 - DOM Events (Updated)</title>
+</head>
+<body>
+
+    <!-- Input -->
+    <input type="text" id="nameInput" placeholder="Type your name">
+
+    <!-- Output -->
+    <p id="output"></p>
+
+    <!-- Button -->
+    <button id="myBtn">Click Me</button>
+
+    <script>
+
+        // Selecting elements using const
+        const input = document.getElementById("nameInput");
+        const output = document.getElementById("output");
+        const button = document.getElementById("myBtn");
+
+        // Function with default parameter
+        const showMessage = (name = "Guest") => {
+            alert(`Hello, ${name}! 👋`);
+        };
+
+        // 1. Button click event using addEventListener
+        button.addEventListener("click", () => {
+            const nameValue = input.value;
+            showMessage(nameValue); // calling function
+        });
+
+        // 2. Show input value when typing (template literal)
+        input.addEventListener("input", () => {
+            output.textContent = `You are typing: ${input.value}`;
+        });
+
+    </script>
+
+</body>
+</html>
