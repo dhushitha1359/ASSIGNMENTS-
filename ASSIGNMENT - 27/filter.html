@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type = "text" oninput="filterList()">
+    <ul id = "list">
+        <li>Laptop</li>
+        <li>Phone</li>
+        <li>Computer</li>
+    </ul>
+    <script>
+        function filterList(){
+
+        let input = document.querySelector("input").value.toLowerCase();
+        let items = document.querySelectorAll("#list li");
+
+        items.forEach((item) =>{
+            let text = item.innerText.toLowerCase();
+
+            if(text.includes(input)){
+                item.style.display = "list-items";
+            }
+            else{
+                item.style.display = "none";
+            }
+        });
+        }
+    </script>
+</body>
+</html>

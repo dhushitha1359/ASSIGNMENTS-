@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            display: flex;
+            gap: 30px;
+            
+            
+        }
+        li{
+            border: 2px solid black;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <ul id = "list"></ul>
+    <script>
+        let movieDetails = ["movie1","movie2","movie30"];
+        let ul = document.getElementById("list");
+
+        for(let i = 0;i<movieDetails.length;i++){
+            let li = document.createElement("li");
+            let div = document.createElement("div");
+            let img = document.createElement("img");
+            let p = document.createElement("p");
+
+            img.src = `https://picsum.photos/100?random${i}`;
+
+            p.innerText = movieDetails[i];
+
+            div.appendChild(img);
+            div.appendChild(p);
+            li.appendChild(div);
+            ul.appendChild(li);
+        }
+    </script>
+</body>
+</html>
