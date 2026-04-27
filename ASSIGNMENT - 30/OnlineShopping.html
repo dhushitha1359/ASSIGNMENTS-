@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shopping Cart</title>
+</head>
+
+<body>
+
+<h2>🛍️ Online Shopping</h2>
+
+<p>Cart Count: <span id="count">0</span></p>
+
+<button onclick="addToCart('Shirt')">Add Shirt</button>
+<button onclick="addToCart('Shoes')">Add Shoes</button>
+<button onclick="addToCart('Watch')">Add Watch</button>
+
+<script>
+    let cartCount = 0;
+
+    // function with callback
+    function addToCart(product, callback) {
+        cartCount++;
+        console.log(product + " added");
+
+        if (callback) {
+            callback(cartCount);
+        }
+    }
+
+    // callback function
+    function updateCount(count) {
+        document.getElementById("count").innerText = count;
+    }
+
+    // calling with callback
+    function addToCart(product) {
+        cartCount++;
+        updateCount(cartCount);
+    }
+</script>
+
+</body>
+</html>
