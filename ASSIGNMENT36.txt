@@ -1,0 +1,73 @@
+App.jsx
+import EffectWithDependency from "./EffectWithDependency";
+import Header from "./Header";
+import Counter from "./Counter";
+import Footer from "./Footer";
+import Layout from "./Layout";
+
+
+function App() {
+  return (
+    <div>
+      <Header />
+      <Counter />
+      <Footer />
+      <Layout/>
+    </div>
+  );
+}
+
+export default App;
+
+Counter.jsx
+function Button({ label, onClick }) {
+  return (
+    <button onClick={onClick}>
+      {label}
+    </button>
+  )
+}
+
+export default Button
+
+Footer.jsx
+function Footer({ text }) {
+  return (
+    <footer>
+      <p>{text}</p>
+    </footer>
+  )
+}
+
+export default Footer
+
+Header.jsx
+function Header({ title }) {
+  return (
+    <header>
+      <h1>{title}</h1>
+    </header>
+  )
+}
+
+export default Header
+
+Layout.jsx
+import Header from './Header'
+import Footer from './Footer'
+
+function Layout({ children }) {
+  return (
+    <div>
+      <Header title="My React App" />
+
+      <main>
+        {children}
+      </main>
+
+      <Footer text="© 2026 React Practice" />
+    </div>
+  )
+}
+
+export default Layout
