@@ -1,0 +1,31 @@
+TASK - 6
+CREATE TABLE events (
+    id INT PRIMARY KEY,
+    event_name VARCHAR(50),
+    event_date DATE
+);
+
+INSERT INTO events (id, event_name, event_date)
+VALUES
+(1, 'Sports Day', '2025-08-15'),
+(2, 'Tech Fest', '2025-09-10'),
+(3, 'Workshop', '2025-10-05'),
+(4, 'Seminar', '2025-11-20'),
+(5, 'Graduation', '2026-04-30');
+
+SELECT NOW() AS current_datetime;
+
+SELECT
+    event_name,
+    DATE_FORMAT(event_date, '%d-%m-%Y') AS formatted_date
+FROM events;
+
+SELECT
+    event_name,
+    YEAR(event_date) AS event_year,
+    MONTH(event_date) AS event_month
+FROM events;
+
+SELECT
+    CONCAT(event_name, ' - ', event_date) AS event_details
+FROM events;
