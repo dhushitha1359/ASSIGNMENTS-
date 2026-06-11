@@ -1,0 +1,40 @@
+TASK - 10
+DELIMITER //
+
+CREATE PROCEDURE InsertEmployee(
+    IN p_id INT,
+    IN p_name VARCHAR(50),
+    IN p_email VARCHAR(100),
+    IN p_salary DECIMAL(10,2)
+)
+BEGIN
+    INSERT INTO employees(id, name, email, salary)
+    VALUES(p_id, p_name, p_email, p_salary);
+END //
+
+CREATE PROCEDURE UpdateSalary(
+    IN p_id INT,
+    IN p_salary DECIMAL(10,2)
+)
+BEGIN
+    UPDATE employees
+    SET salary = p_salary
+    WHERE id = p_id;
+END //
+
+CREATE PROCEDURE GetEmployees()
+BEGIN
+    SELECT * FROM employees;
+END //
+
+DELIMITER ;
+
+CALL InsertEmployee(6,'Divya','divya@gmail.com',40000);
+
+CALL UpdateSalary(1,50000);
+
+CALL GetEmployees();
+
+DROP PROCEDURE IF EXISTS InsertEmployee;
+DROP PROCEDURE IF EXISTS UpdateSalary;
+DROP PROCEDURE IF EXISTS GetEmployees;
