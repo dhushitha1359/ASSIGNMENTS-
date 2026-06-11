@@ -1,0 +1,41 @@
+TASK - 7
+CREATE TABLE customers (
+    customer_id INT PRIMARY KEY,
+    customer_name VARCHAR(50)
+);
+
+CREATE TABLE orders (
+    order_id INT PRIMARY KEY,
+    product_name VARCHAR(50),
+    customer_id INT,
+    FOREIGN KEY (customer_id)
+    REFERENCES customers(customer_id)
+);
+
+INSERT INTO customers VALUES
+(1,'Arun'),
+(2,'Priya'),
+(3,'Rahul'),
+(4,'Sneha'),
+(5,'Karthik');
+
+INSERT INTO orders VALUES
+(101,'Laptop',1),
+(102,'Mouse',2),
+(103,'Keyboard',1),
+(104,'Monitor',3),
+(105,'Headphones',4);
+
+SELECT c.customer_name,
+       o.order_id,
+       o.product_name
+FROM customers c
+INNER JOIN orders o
+ON c.customer_id = o.customer_id;
+
+SELECT c.customer_name,
+       o.order_id,
+       o.product_name
+FROM customers c
+LEFT JOIN orders o
+ON c.customer_id = o.customer_id;
